@@ -1,0 +1,133 @@
+.header {
+  position: relative;
+}
+.header__body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  padding-top: 45px;
+  @media (max-width: $wm) {
+    padding: 10px 0;
+    background-color: black;
+    position: relative;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__slide {
+  position: relative;
+}
+
+.slider__bg img{
+  min-height: 250px;
+  max-height: 100vh;
+}
+
+.slider__wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  @media (max-width: $wm) {
+    padding: 3%;
+  }
+}
+.slider__title {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: 28px;
+  margin-bottom: 50px;
+  @media (max-width: 1200px) {
+    font-size: 40px;
+    letter-spacing: 16px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  @media (max-width: $wm) {
+    margin-top: 0;
+    font-size: 26px;
+    letter-spacing: 10px;
+  }
+}
+.slider__link {
+  color: $red;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  @media (max-width: 1200px) {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  @media (max-width: $wm) {
+    font-size: 15;
+    letter-spacing: 5px;
+  }
+}
+
+.logo {
+  background-color: white;
+  color: #7e7e7d;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  @media (max-width: 1200px) {
+    font-size: 18px;
+    letter-spacing: 5px;
+    padding: 20px;
+  }
+  @media (max-width: $wm) {
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+.burger {
+  width: 40px;
+  height: 30px;
+}
+.menu__item {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin-left: 70px;
+  font-weight: bold;
+  &_r {
+    color: $red;
+  }
+  @media (max-width: 1200px) {
+    margin-left: 35px;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+}
+
+.slider__btn {
+  width: 50px;
+  height: 50px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 50;
+  outline: none;
+  transform: translateX(-50%) rotate(-45deg);
+  @media (max-width: $wm) {
+    width: 30px;
+    height: 30px;
+  }
+}

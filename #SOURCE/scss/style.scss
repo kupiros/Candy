@@ -1,0 +1,50 @@
+
+//------------------------------ПЕРВОНАЧАЛЬНЫЕ НАСТРОЙКИ-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//переменные
+$wc: 1500px; //стандартная ширина контейнера
+$wm: 767px;
+$red: #f84545;
+
+//шрифты (юзай fff)
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/light.woff2') format('woff2'), url('../fonts/light.woff') format('woff'), url('../fonts/light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/bold.woff2') format('woff2'), url('../fonts/bold.woff') format('woff'), url('../fonts/bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/regular.woff2') format('woff2'), url('../fonts/regular.woff') format('woff'), url('../fonts/regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+
+//вруби теперь шрифт этот
+body {
+  font-family: 'Proxima', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------НЕ ТРОГАТЬ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@import 'basics';
+@import '_IMPORTS';
+@import '_UI';
