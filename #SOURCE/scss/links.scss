@@ -21,18 +21,7 @@
   margin-bottom: 56 / 1500 * 100vw;
   flex: 1 1 auto;
   position: relative;
-  
-}
-
-.links__img {
-  @media (max-width: $wm) {
-    img {
-      max-height: 250px;
-    } 
-  }
-  height: 100%;
-  position: relative;
-  &:after {
+  &:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -42,8 +31,17 @@
     background-color: rgba(#000,0.5);
   }
 }
+
+.links__img {
+  @media (max-width: $wm) {
+    max-height: 250px;
+  }
+  height: 100%;
+  width: 100%;
+}
 .links__wrap {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;

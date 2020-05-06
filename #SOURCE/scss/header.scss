@@ -24,7 +24,8 @@
   position: relative;
 }
 
-.slider__bg img{
+.slider__bg{
+  width: 100%;
   min-height: 250px;
   max-height: 100vh;
 }
