@@ -1053,6 +1053,7 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .header__body {

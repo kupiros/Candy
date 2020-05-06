@@ -5,3 +5,6 @@ burger.addEventListener('click',()=>{
   menu.classList.toggle('_active');
   document.body.classList.toggle('lock');
 });
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
