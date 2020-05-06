@@ -1045,6 +1045,14 @@ button.swiper-pagination-bullet {
 
 .header {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 
 .header__body {
@@ -1068,14 +1076,17 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 
+.slider {
+  width: 100%;
+}
+
 .slider__slide {
   position: relative;
 }
 
 .slider__bg {
   width: 100%;
-  min-height: 250px;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .slider__wrap {
@@ -1265,9 +1276,9 @@ button.swiper-pagination-bullet {
   }
 
   a:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
   }
 }
 
