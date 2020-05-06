@@ -1,3 +1,8 @@
 a {
-  @extend .scale;
+  @media (min-width: $wm) {
+    transition: transform 0.1s;
+    &:hover {
+      transform: scale(1.1);    
+    }
+  }
 }

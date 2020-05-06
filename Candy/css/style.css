@@ -315,22 +315,6 @@ input[type="radio"] + label::after {
   overflow: hidden;
 }
 
-.scale,
-a {
-  -webkit-transition: -webkit-transform 0.1s;
-  transition: -webkit-transform 0.1s;
-  -o-transition: transform 0.1s;
-  transition: transform 0.1s;
-  transition: transform 0.1s, -webkit-transform 0.1s;
-}
-
-.scale:hover,
-a:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 ._container {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -1273,6 +1257,20 @@ button.swiper-pagination-bullet {
 
   .links__column_b .links__logo {
     max-height: 200px;
+  }
+
+  a {
+    -webkit-transition: -webkit-transform 0.1s;
+    transition: -webkit-transform 0.1s;
+    -o-transition: transform 0.1s;
+    transition: transform 0.1s;
+    transition: transform 0.1s, -webkit-transform 0.1s;
+  }
+
+  a:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
