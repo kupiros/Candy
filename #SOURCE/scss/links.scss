@@ -25,7 +25,7 @@
 
 .links__img {
   @media (max-width: $wm) {
-    max-height: 250px;
+    height: 250px;
   }
   height: 100%;
   width: 100%;
@@ -51,8 +51,9 @@
     text-align: center;
   }
 }
-.links__logo {
+.links__logo img {
   max-height: 100px;
+  width: auto;
   @media (max-width: 1500px) {
     max-height: 60px;
   }
@@ -81,7 +82,7 @@
         font-size: 40px;
       }
     }
-    .links__logo {
+    .links__logo img {
       max-height: 200px;
       @media (max-width: 1500px) {
         max-height: 150px;

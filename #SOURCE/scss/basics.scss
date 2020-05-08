@@ -152,12 +152,14 @@ a {
   color: inherit;
   display: inline-block;
 }
-img {
+
+._img img{
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   & + label {
