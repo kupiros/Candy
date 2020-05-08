@@ -1250,12 +1250,7 @@ button.swiper-pagination-bullet {
 }
 
 .inst {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .inst__wrap {
@@ -1294,6 +1289,14 @@ button.swiper-pagination-bullet {
   letter-spacing: 12px;
   font-size: 30px;
   font-weight: bold;
+}
+
+.inst__bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .inst__img {
@@ -1506,7 +1509,7 @@ button.swiper-pagination-bullet {
             flex: 0 1 33.333%;
   }
 
-  .inst__img_d {
+  .inst__img:nth-child(n+7) {
     display: none;
   }
 }

@@ -1,7 +1,5 @@
 .inst {
-  display: flex;
   position: relative;
-  flex-wrap: wrap;
 }
 .inst__wrap {
   position: absolute;
@@ -51,15 +49,17 @@
     letter-spacing: 6px;
   }
 }
+.inst__bg {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .inst__img {
   flex: 0 1 25%;
   @media (max-width: $wm) {
     flex: 0 1 33.333%;
-  }
-}
-
-.inst__img_d {
-  @media (max-width: $wm) {
-    display: none;
+    &:nth-child(n+7) {
+      display: none;
+    }
   }
 }
