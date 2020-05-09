@@ -3,6 +3,9 @@
   margin: 0;
   border: 0;
 }
+*:focus {
+  outline: none;
+}
 *,*::before,*::after {
   box-sizing: border-box;
 }
@@ -10,7 +13,7 @@ html,body {
   height: 100%;
   width: 100%;
   font-size: 100%;
-  line-height: 1.2;
+  line-height: 1.5;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -63,7 +66,6 @@ button, input, optgroup, select, textarea {
   font-size: 100%;
   line-height: 1;
 }
-
 input::-ms-clear {
   display: none;
 }
@@ -97,7 +99,8 @@ textarea {
   overflow: auto;
 }
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
-  height: auto;
+  //height: auto;
+  display: none;
 }
 [type="search"] {
   -webkit-appearance: textfield;
@@ -122,19 +125,6 @@ template {
 [hidden] {
   display: none;
 }
-
-.hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  overflow: hidden;
-}
 ul,ol {
   list-style: none;
 }
@@ -145,16 +135,22 @@ button {
 input::placeholder {
   color:inherit;
 }
+
 a {
   background-color: transparent;
   text-decoration: none;
   text-align: center;
   color: inherit;
-  display: inline-block;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ._img img{
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -199,9 +195,10 @@ input[type="radio"] + label {
 .burger {
   position: relative;
   z-index: 50;
-  outline: none;
   display: none;
   overflow: hidden;
+  width: 40px;
+  height: 30px;
   &::before, &::after {
     content: '';
     transform-origin: right;
@@ -212,7 +209,7 @@ input[type="radio"] + label {
     height: 2px;
     width: 100%;
     background-color: white;
-    transition: all 0.5s;
+    transition: transform 0.5s;
   }
   & span {
     top: 50%;    
@@ -226,7 +223,7 @@ input[type="radio"] + label {
   }
   &._active {
     span {
-      right: -100%;
+      transform: translateX(101%);
     }
     &::before {
       transform: rotate(-45deg);
@@ -260,9 +257,8 @@ input[type="radio"] + label {
   .menu__list {
     flex-direction: column;
     padding-top: 50px;
-    transition: all 0.5s;
-    position: relative;
-    top: -100%;
+    transition: transform 0.5s;
+    transform: translateY(-101%); 
   }
   .menu__item {
     margin: 0;
@@ -274,7 +270,7 @@ input[type="radio"] + label {
     opacity: 1;
     visibility: visible;
     .menu__list {
-      top: 0;
+      transform: translateY(0);
     }
   }
 }

@@ -1,7 +1,7 @@
 a {
   @media (min-width: $wm) {
     transition: transform 0.1s;
-    &:hover {
+    &:hover,&:focus {
       transform: scale(1.05);    
     }
   }
