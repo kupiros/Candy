@@ -1235,6 +1235,7 @@ button.swiper-pagination-bullet {
 .links__logo img {
   max-height: 100px;
   width: auto;
+  height: auto;
 }
 
 .links__title {
