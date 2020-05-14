@@ -28,10 +28,6 @@ body {
   border: 0;
 }
 
-*:focus {
-  outline: none;
-}
-
 *,
 *::before,
 *::after {
@@ -250,13 +246,14 @@ a {
   text-decoration: none;
   text-align: center;
   color: inherit;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 
 img {
-  display: block;
   max-width: 100%;
   height: auto;
+  vertical-align: top;
 }
 
 ._img img {
