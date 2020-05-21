@@ -540,7 +540,6 @@ input[type="radio"] + label::after {
 
 .swiper-container-css-mode > ._sW {
   overflow: auto;
-  scrollbar-width: none;
   /* For Firefox */
   -ms-overflow-style: none;
   /* For Internet Explorer and Edge */
@@ -1486,7 +1485,7 @@ button.swiper-pagination-bullet {
   }
 
   .slider__link {
-    font-size: 15;
+    font-size: 15px;
     letter-spacing: 5px;
   }
 
