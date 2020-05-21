@@ -1159,6 +1159,10 @@ button.swiper-pagination-bullet {
           transform: translateX(-50%) rotate(-45deg);
 }
 
+.burger {
+  outline: none;
+}
+
 .links__list {
   padding-top: calc(3vw + 30px);
   padding-bottom: calc(3vw + 30px);
