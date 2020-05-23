@@ -262,13 +262,13 @@ img {
 }
 
 ._img img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 input[type="radio"] + label,
@@ -306,7 +306,7 @@ input[type="radio"] + label::after {
   border-radius: 50%;
 }
 
-.lock {
+._lock {
   overflow: hidden;
 }
 
@@ -340,8 +340,8 @@ input[type="radio"] + label::after {
 .burger span {
   position: absolute;
   right: 0;
+  left: 0;
   height: 2px;
-  width: 100%;
   background-color: white;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
@@ -350,15 +350,12 @@ input[type="radio"] + label::after {
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
-.burger span {
-  top: 50%;
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
-}
-
 .burger::before {
   top: 0;
+}
+
+.burger span {
+  top: calc(50% - 1px);
 }
 
 .burger::after {
@@ -1385,7 +1382,7 @@ button.swiper-pagination-bullet {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
     opacity: 0;

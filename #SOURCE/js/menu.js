@@ -3,5 +3,5 @@ const menu = document.querySelector('.menu');
 burger.addEventListener('click',()=>{
   burger.classList.toggle('_active');
   menu.classList.toggle('_active');
-  document.body.classList.toggle('lock');
+  document.body.classList.toggle('_lock');
 });
